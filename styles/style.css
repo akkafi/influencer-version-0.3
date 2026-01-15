@@ -3,45 +3,229 @@
 
 
 /* common class start here */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --poppins_font:  font-family: "Poppins", sans-serif;
+body {
+    background: rgba(255, 255, 255, 1);
 }
+
+:root {
+    --poppins-fonts: "Poppins", sans-serif;
+    --manrope-fonts: "Manrope", sans-serif;
+    --inter-fonts: "Inter", sans-serif;
+    --primary-color: #3A3A3A;
+    --secondary-color: #18191F;
+}
+
 .poppins_fonts {
-  font-family: "Poppins", sans-serif;
-  /* font-weight: 100;
+    font-family: "Poppins", sans-serif;
+    /* font-weight: 100;
   font-style: normal; */
 }
 
 .inter_fonts {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .manrope_fonts {
-  font-family: "Manrope", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
-.container{
-    max-width: 85%;
+.container {
+    max-width: 90%;
     margin: 0 auto;
 }
-.display_flex{
+
+.container_2 {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.display_flex {
     display: flex;
 }
+
+.btn_primary {
+    padding: 10px 24px;
+    border: none;
+    border-radius: 40px;
+    background-color: #E02C6D;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn_primary:hover {
+    background-color: #f04282b4;
+}
+
 /* common class end here */
 
 
 /* header section start here */
-.header_preant{
-    background-color: #AAAAAA;
+/* navbar section start */
+.nav_container {
+    justify-content: space-between;
+    padding: 40px 0;
 }
+
+.nav_title {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.nav_menu {
+    gap: 34px;
+    list-style: none;
+    align-items: center;
+
+}
+
+.nav_menu .nav_link {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.nav_menu .nav_items i {
+    font-size: 24px;
+}
+
+/* navbar section end */
+
+/* hero_container start */
+.hero_container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero_description {
+    max-width: 582px;
+}
+
+.hero_title {
+    color: var(--primary-color);
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+}
+
+.hero_text {
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 16px 0;
+}
+
+.hero_image {
+    max-width: 100%;
+}
+
+.hero_image_container {
+    background: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 96%;
+    margin-top: 10px;
+    /* background-color: red; */
+}
+
+/* hero_container end */
 /* header section end here */
+
+/* main section start */
+/* company section start */
+.company_container {
+    margin-top: 70px;
+}
+
+.company_logo {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 80px;
+    justify-items: center;
+}
+
+/* company section end */
+
+/* collection_container section start */
+.collection_container {
+    margin-top: 100px;
+}
+
+.collection_container_title {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: var(--poppins-fonts);
+}
+
+.collection_card {
+    /* border: 2px solid red; */
+    width: 330px;
+    padding: 17px 15px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.collection_card_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card_image {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.card_title{
+font-size: 1.8rem;
+font-weight: 500;
+margin-bottom: 6px;
+font-family: var(--poppins-fonts);
+color: #18191F;
+}
+
+.card_amound{
+    color: #000000;
+    font-family: var(--inter-fonts);
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+
+}
+
+.card_star{
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    font-family: var(--poppins-fonts);
+}
+
+.card_text{
+width: 196px;
+line-height: 143%;
+font-weight: 500;
+font-family: var(--inter-fonts);
+color: #787885;
+font-size: 0.90rem;
+letter-spacing: 1.8%;
+}
+
+/* collection_container section end */
+/* main section end */
