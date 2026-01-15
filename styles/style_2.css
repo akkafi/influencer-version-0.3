@@ -1,0 +1,48 @@
+/* mobile responsive */
+
+@media screen and (max-width:576px) {
+    /* navbar section start */
+.nav_container{
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+        padding: 30px 0;
+}
+.nav_title {
+    font-size: 1.3rem;
+}
+
+.nav_menu {
+    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+/* navbar section end */
+/* hero_container start */
+.hero_container {
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+
+.hero_title {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    margin-top: 15px;
+}
+  /* hero_container end */
+
+  /* company section start */
+.company_container {
+    margin-top: 50px;
+}
+.company_logo {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.company_logo img{
+    width: 100%;
+}
+/* company section end */
+}
