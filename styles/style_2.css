@@ -23,8 +23,6 @@
     flex-direction: column-reverse;
     text-align: center;
 }
-
-
 .hero_title {
     font-size: 2rem;
     font-weight: 500;
@@ -45,4 +43,62 @@
     width: 100%;
 }
 /* company section end */
+
+/* collection_container section start */
+.collection_container {
+    margin-top: 80px;
+}
+
+.collection_container_title {
+    font-size: 1.5rem;
+}
+
+.collection_card_container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    /* max-width: 100%; */
+}
+.collection_card{
+    width: 100%;
+}
+
+.card_title {
+    font-size: 1.4rem;
+}
+
+.card_amound {
+    font-size: 1.3rem;
+}
+/* collection_container section end */
+
+/* featured_container start */
+.featured_container {
+    flex-direction: column-reverse;
+    margin-top: 70px;
+    gap: 40px;
+}
+
+.featured_description {
+    width: 100%;
+    text-align: center;
+}
+
+.featured_description h2 {
+    font-size: 1.6rem;
+}
+
+.featured_description p {
+    width: 100%;
+}
+
+/* featured_container end */
+
+/* footer section start */
+footer {
+    margin-top: 70px;
+}
+.footer_document h3 {
+    font-size: 1.6rem;
+}
+/* footer section end */
 }
